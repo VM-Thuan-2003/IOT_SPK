@@ -14,6 +14,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
 import matplotlib.pyplot as plt
 import numpy as np
+import time
 
 # import time
 
@@ -28,6 +29,7 @@ state_mode_2 = False
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         global state_mode_1, state_mode_2
+        self.MainWindow = MainWindow
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(800, 600)
         self.centralwidget = QtWidgets.QWidget(MainWindow)
